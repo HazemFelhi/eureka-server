@@ -4,7 +4,6 @@ FROM docker.io/openjdk:17-oracle
 # Set the working directory inside the container
 WORKDIR /app
 
-RUN mnv clean package
 # Copy the JAR file into the container
 COPY target/Eureka-Server-0.0.1-SNAPSHOT.jar /app/eureka-server.jar
 
